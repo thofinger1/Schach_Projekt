@@ -6,7 +6,8 @@ import java.awt.*;
 public class Panel extends JPanel {
     int x = 55;
     int y = 45;
-    int sside = 60;
+    int size = 60;
+    private static final long serialVersionUID = -12345677L;
     @Override
     protected void paintChildren(Graphics graphics)
     {
@@ -14,7 +15,7 @@ public class Panel extends JPanel {
         Graphics2D graphics2D = (Graphics2D)graphics;
 
 
-        int size = 600/8;
+
 
 
         for (int j = 0; j < 4; j++) {

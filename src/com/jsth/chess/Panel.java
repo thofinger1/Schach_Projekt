@@ -22,7 +22,8 @@ public class Panel extends JPanel {
 
         //img laden und anzeigen
         ClassLoader cl = getClass().getClassLoader();
-        URL rURL = cl.getResource("/Users/jonasstarck/Desktop/POS1/AndroidStudio/Schach_Projekt/src/com/jsth/chess/img/bishop_black.png");
+
+        URL rURL = cl.getResource("./src/com/jsth/chess/img/bishop_black.png");
         System.out.println(rURL);
         if (rURL == null) {
             System.out.println("Bild wurde nicht geladen");
